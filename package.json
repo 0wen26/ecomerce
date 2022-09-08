@@ -1,4 +1,5 @@
 {
+  "homepage": "https://0wen26.github.io/ecomerce",
   "name": "ecomerce",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages d-build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -15,6 +18,7 @@
     "@mui/material": "^5.10.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scripts": "^2.1.3",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
@@ -28,6 +32,7 @@
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.31.0",
+    "gh-pages": "^4.0.0",
     "stylelint": "^14.11.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^28.0.0",
